@@ -29,11 +29,10 @@ Contributions to this project are welcome. If you have any suggestions or would 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
 
 **README.md (Versão em português do Brasil):**
-```
-# Automacao-academia
+
+# gym-attendance-automation
 
 Este projeto tem como objetivo automatizar o processo de registro de suas visitas à academia com base na localização do seu iPhone. Utilizando a API do iCloud e Python, este script irá verificar se a localização do seu iPhone corresponde à localização da academia e marcar o dia como pago se você permanecer lá por mais de 30 minutos. O objetivo é fornecer uma maneira automatizada de acompanhar suas idas à academia sem intervenção manual.
 
