@@ -1,8 +1,10 @@
 from pyicloud import PyiCloudService
 from datetime import datetime, timedelta
+from config import config
+
 
 # Substitua '<seu_email>' e '<sua_senha>' pelas suas credenciais do iCloud
-api = PyiCloudService('<seu_email>', '<sua_senha>')
+api = PyiCloudService(config.settings.ICLOUD_EMAIL, config.settings.ICLOUD_PASSWORD)
 
 def marca_dia_pago():
     hoje = datetime.now().date()
@@ -33,4 +35,4 @@ def marca_dia_pago():
       # Aqui, você pode adicionar a lógica para marcar o dia como pago
 
 # Chama a função para marcar o dia como pago
-marca_dia_pago()
+#marca_dia_pago()
