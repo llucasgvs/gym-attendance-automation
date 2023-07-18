@@ -1,4 +1,29 @@
 # gym-attendance-automation
+
+Este projeto tem como objetivo automatizar o processo de registro de suas visitas à academia com base na localização do seu iPhone. Utilizando a API do iCloud e Python, este script irá verificar se a localização do seu iPhone corresponde à localização da academia e marcar o dia como pago se você permanecer lá por mais de 30 minutos. O objetivo é fornecer uma maneira automatizada de acompanhar suas idas à academia sem intervenção manual.
+
+## Configuração e Uso
+
+Para utilizar este script, siga os seguintes passos:
+
+1. Clone este repositório em sua máquina local.
+2. Instale as dependências Python necessárias executando `pip install -r requirements.txt`.
+3. Abra o arquivo `localizacao_academia.py` e substitua `<seu_email>` e `<sua_senha>` pelas suas credenciais do iCloud.
+4. Modifique os valores de latitude e longitude na função `marca_dia_pago()` com as coordenadas da sua academia.
+5. Execute o script manualmente ou agende sua execução automaticamente usando agendadores de tarefas ou serviços em nuvem.
+
+## Dependências
+
+Este projeto depende das seguintes bibliotecas:
+
+- pyicloud (para interagir com a API do iCloud)
+- datetime (para lidar com datas e horas)
+
+Por favor, consulte o arquivo `requirements.txt` para verificar as versões específicas das dependências.
+
+**README.md (English):**
+
+# gym-attendance-automation
 Project Name: Gym Attendance Automation Automate gym attendance tracking using iPhone location. Mark days as paid when spending 30+ minutes near the gym. Streamline monitoring without manual effort. Efficiently track fitness progress.
 
 This project aims to automate the process of tracking your visits to the gym based on your iPhone's location. By using the iCloud API and Python, this script will check if your iPhone's location matches the gym's location and mark the day as paid if you stay there for more than 30 minutes. The goal is to provide an automated way to keep track of your gym attendances without manual intervention.
@@ -30,30 +55,6 @@ Contributions to this project are welcome. If you have any suggestions or would 
 
 This project is licensed under the [MIT License](LICENSE).
 
-**README.md (Versão em português do Brasil):**
-
-# gym-attendance-automation
-
-Este projeto tem como objetivo automatizar o processo de registro de suas visitas à academia com base na localização do seu iPhone. Utilizando a API do iCloud e Python, este script irá verificar se a localização do seu iPhone corresponde à localização da academia e marcar o dia como pago se você permanecer lá por mais de 30 minutos. O objetivo é fornecer uma maneira automatizada de acompanhar suas idas à academia sem intervenção manual.
-
-## Configuração e Uso
-
-Para utilizar este script, siga os seguintes passos:
-
-1. Clone este repositório em sua máquina local.
-2. Instale as dependências Python necessárias executando `pip install -r requirements.txt`.
-3. Abra o arquivo `localizacao_academia.py` e substitua `<seu_email>` e `<sua_senha>` pelas suas credenciais do iCloud.
-4. Modifique os valores de latitude e longitude na função `marca_dia_pago()` com as coordenadas da sua academia.
-5. Execute o script manualmente ou agende sua execução automaticamente usando agendadores de tarefas ou serviços em nuvem.
-
-## Dependências
-
-Este projeto depende das seguintes bibliotecas:
-
-- pyicloud (para interagir com a API do iCloud)
-- datetime (para lidar com datas e horas)
-
-Por favor, consulte o arquivo `requirements.txt` para verificar as versões específicas das dependências.
 
 ## Contribuição
 
